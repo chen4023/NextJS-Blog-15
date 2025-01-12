@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default async function PostCard(props: { post: Post, key: string }) {
+export default function PostCard(props: { post: Post, key: string }) {
   const post = props.post
   return (
     <Link href={`/posts/${post.path}`} className="rounded-lg border border-gray-100 shadow-lg">
