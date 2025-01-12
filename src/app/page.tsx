@@ -10,8 +10,8 @@ export default async function Home() {
       <Profile />
       <h2 className="font-bold px-6">Featured Posts</h2>
       <div className="flex flex-wrap gap-3 items-center justify-center mt-3">
-        {posts?.map((post) =>
-          <PostCard key={post.path} post={post} />
+        {posts?.map((post, index) =>
+          <PostCard key={index} post={post} />
         )}
       </div>
     </>

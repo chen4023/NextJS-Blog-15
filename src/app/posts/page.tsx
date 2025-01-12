@@ -9,8 +9,8 @@ export default async function PostsPage() {
     <div className='flex items-stretch'>
       <CategoryBar />
       <div className="flex flex-wrap gap-3 items-center justify-center mt-3">
-        {posts?.map((post) =>
-          <PostCard key={post.path} post={post} />
+        {posts?.map((post, index) =>
+          <PostCard key={index} post={post} />
         )}
       </div>
     </div >
