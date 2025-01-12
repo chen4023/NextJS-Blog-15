@@ -21,3 +21,9 @@ export async function featuredPosts(): Promise<Post[] | undefined> {
   const data = posts.filter((post) => post.featured);
   return data;
 }
+
+export async function getCategory(): Promise<string[] | undefined> {
+  const posts = await getPosts();
+  const data = [...new Set(posts.map((post) => post.category))];
+  return data;
+}
