@@ -27,3 +27,11 @@ export async function getCategory(): Promise<string[] | undefined> {
   const data = [...new Set(posts.map((post) => post.category))];
   return data;
 }
+
+export async function CategotyFiltered(
+  category: string
+): Promise<Post[] | undefined> {
+  const posts = await getPosts();
+  const data = posts.filter((post) => post.category === category);
+  return data;
+}
