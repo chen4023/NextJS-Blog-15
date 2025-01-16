@@ -14,7 +14,7 @@ type Props = {
 export default function CarouselPost({ posts, responsive }: Props) {
   return (
     <div className="w-full my-4">
-      <h2 className="font-bold px-2 text-xl w-[133px] border-b-4 border-main">You may like</h2>
+      <h2 className="sm:ml-2 ml-20 font-bold px-2 text-xl w-[133px] border-b-4 border-main">You may like</h2>
       <Carousel
         draggable={true}
         infinite={true}

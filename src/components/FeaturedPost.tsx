@@ -8,7 +8,7 @@ export default async function FeaturedPost() {
 
   return (
     <div className="w-full mx-auto max-w-screen-2xl">
-      <h2 className="font-bold px-2 text-xl w-40 border-b-4 border-main">Featured Posts</h2>
+      <h2 className="font-bold mt-3 px-2 text-xl w-40 border-b-4 border-main 2xl:ml-28 ml-20">Featured Posts</h2>
       <div className="flex flex-wrap gap-4 items-center justify-center pt-4">
         {posts?.map((post, index) =>
           <PostCard key={index} post={post} />
