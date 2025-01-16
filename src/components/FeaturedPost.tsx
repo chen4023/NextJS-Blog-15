@@ -5,6 +5,7 @@ import { featuredPosts } from '@/app/api/posts';
 export default async function FeaturedPost() {
   const posts = await featuredPosts();
 
+
   return (
     <div className="w-full mx-auto max-w-screen-2xl">
       <h2 className="font-bold px-2">Featured Posts</h2>
