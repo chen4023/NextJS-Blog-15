@@ -1,4 +1,4 @@
-import { getCategory } from "@/service/posts";
+import { getCategory } from "@/app/api/posts";
 
 export default async function CategoryBar() {
   const categorys = await getCategory();

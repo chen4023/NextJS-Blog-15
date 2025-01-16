@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className='flex flex-col w-full max-w-screen-2xl mx-auto'>
         <Header />
-        <main className="grow pb-5">{children}</main>
+        <main className="grow p-4">{children}</main>
         <Footer />
       </body>
     </html>
