@@ -1,19 +1,19 @@
-import PostCard from "@/components/PostCard";
-import { featuredPosts } from "@/service/posts";
+'use server'
+import FeaturedPost from "@/components/FeaturedPost";
 import Profile from "@/components/Profile";
+import { getPosts } from '@/app/api/posts';
+import CarouselPost from "@/components/CarouselPost";
+import { responsive } from "@/utils/carousel";
+
 
 export default async function Home() {
-  const posts = await featuredPosts();
+  const posts = await getPosts();
 
   return (
-    <>
+    <section className="w-full mx-auto">
       <Profile />
-      <h2 className="font-bold px-6">Featured Posts</h2>
-      <div className="flex flex-wrap gap-3 items-center justify-center mt-3">
-        {posts?.map((post) =>
-          <PostCard key={post.path} post={post} />
-        )}
-      </div>
-    </>
+      <FeaturedPost />
+      <CarouselPost posts={posts} responsive={responsive} />
+    </section>
   );
 }
