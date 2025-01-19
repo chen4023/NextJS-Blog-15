@@ -15,5 +15,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  // tailwind markdownviewr 사용시 설정 추가 필수
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("@tailwindcss/typography")],
 } satisfies Config;
