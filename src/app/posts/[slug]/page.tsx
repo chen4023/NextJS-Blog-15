@@ -1,7 +1,6 @@
 import { getPostDetail } from '@/app/api/posts';
 import Image from 'next/image';
 import PostContent from '@/components/PostContent';
-
 import AdjacentPostCard from '@/components/AdjacentPostCard';
 type Props = {
   params: Promise<{ slug: string }>
@@ -9,7 +8,6 @@ type Props = {
 export default async function PostDetail({ params }: Props) {
   const { slug } = await params;
   const post = await getPostDetail(slug)
-
   const { title, path, next, prev } = post
   return (
     <article className='rounded-2xl shadow-lg m-4 bg-gray-100'>
