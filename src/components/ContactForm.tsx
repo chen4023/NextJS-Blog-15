@@ -41,7 +41,7 @@ export default function ContactForm() {
         <Input label='제목' id='subject' name="subject" type='text' onChange={onChange} className={INPUT_CLASS} value={form.subject} />
         <label htmlFor='message'>본문</label>
         <textarea rows={10} id='message' name="message" onChange={onChange} className={INPUT_CLASS} value={form.message} required />
-        <button type="submit" className="w-full text-2xl text-center bg-yellow-200 mt-5 h-10 rounded-md">전송하기</button>
+        <button type="submit" className="w-full text-xl text-center bg-yellow-200 mt-5 h-10 rounded-md">전송하기</button>
       </form>
     </>
   );
