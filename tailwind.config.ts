@@ -13,6 +13,9 @@ export default {
         bgColor: "#FFFFFF",
         font: "#1E201E",
       },
+      fontFamily: {
+        sejong: ["var(--font-Sejong)"],
+      },
     },
   },
   // tailwind markdownviewr 사용시 설정 추가 필수
