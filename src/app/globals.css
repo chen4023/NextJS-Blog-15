@@ -4,7 +4,7 @@
 
 body {
   background-color: #ededed;
-  color: #2f2f2f;
+  color: #3c3c3c;
   background: var(--background);
   height: 100vh;
   overflow-y: auto;
@@ -14,8 +14,7 @@ body {
   all: revert;
 }
 
-@font-face {
-  font-family: "Sejong";
-  font-weight: 200;
-  src: url("../../public/fonts/SejongGeulggot.ttf") format("truetype");
+input,
+textarea:focus {
+  outline: none;
 }
