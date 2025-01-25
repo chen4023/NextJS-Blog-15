@@ -12,19 +12,6 @@ const Sejong = localFont({
 })
 
 
-// const Gmarket = localFont({
-//   src: '../../public/fonts/GmarketSansTTFLight.ttf',
-//   display: 'swap',
-//   weight: '45 920',
-//   variable: '--font-Gmarket',
-// })
-
-// const GmarketBold = localFont({
-//   src: '../../public/fonts/GmarketSansTTFBold.ttf',
-//   display: 'swap',
-//   weight: '45 920',
-//   variable: '--font-GmarketBold',
-// })
 export const metadata: Metadata = {
   title: "Chen Blog",
   description: "Next15 버전으로 블로그 개발",

@@ -15,8 +15,6 @@ export default {
       },
       fontFamily: {
         sejong: ["var(--font-Sejong)"],
-        gmark: ["var(--font-Gmarket)"],
-        gmarkBold: ["var(--font-GmarketBold)"],
       },
     },
   },
