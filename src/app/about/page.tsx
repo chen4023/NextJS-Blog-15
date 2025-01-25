@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <div className='h-full'>
       <Profile />
-      <section className='flex flex-col justify-center gap-16 text-center py-12 h-[70vh] bg-gray-100'>
+      <section className='flex flex-col justify-center gap-16 shadow-lg mt-6 text-center h-[50vh] bg-gray-100'>
         <div>
           <h2 className={TITLE_CLASS}>👩🏻‍💻 Who am I ?</h2>
           <p>개발을 사랑하는 프론트엔드 개발자</p>

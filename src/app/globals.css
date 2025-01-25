@@ -13,3 +13,9 @@ body {
 .markdown > * {
   all: revert;
 }
+
+@font-face {
+  font-family: "Sejong";
+  font-weight: 200;
+  src: url("../../public/fonts/SejongGeulggot.ttf") format("truetype");
+}
