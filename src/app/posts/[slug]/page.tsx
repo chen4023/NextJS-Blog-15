@@ -1,15 +1,16 @@
 import { getPostDetail } from '@/app/api/posts';
 import Image from 'next/image';
 import PostContent from '@/components/PostContent';
+import AdjacentPostCard from '@/components/AdjacentPostCard';
 type Props = {
   params: Promise<{ slug: string }>
 }
 export default async function PostDetail({ params }: Props) {
   const { slug } = await params;
   const post = await getPostDetail(slug)
-  const { title, path } = post
+  const { title, path, next, prev } = post
   return (
-    <article className='rounded-2xl overflow-hidden shadow-lg m-4 bg-gray-100'>
+    <article className='rounded-2xl shadow-lg m-4 bg-gray-100'>
       <Image className='w-full max-h-[500px] h-1/5'
         src={`/images/posts/${path}.png`}
         alt={title}
@@ -17,6 +18,10 @@ export default async function PostDetail({ params }: Props) {
         height={420}
       />
       <PostContent post={post} />
+      <div className='flex shadow-md'>
+        {prev && <AdjacentPostCard post={prev} type='prev' />}
+        {next && <AdjacentPostCard post={next} type='next' />}
+      </div>
     </article>
   );
 }
