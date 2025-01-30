@@ -1,6 +1,12 @@
 import { SiVelog } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Me",
+  description: "Chen에게 메일을 보내는 페이지",
+};
 
 const LINKS = [
   { icon: <SiVelog />, url: 'https://velog.io/@chen4023/posts' },
