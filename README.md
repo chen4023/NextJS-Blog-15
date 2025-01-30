@@ -1,7 +1,7 @@
 ## 💌 Nextjs 15 학습용 블로그 제작
 
 Front-end Developer
-
+![Image](https://github.com/user-attachments/assets/dfe0c5cb-376c-40f5-a056-738063075373)
 ---
 
 **Description**
