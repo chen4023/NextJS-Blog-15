@@ -16,9 +16,10 @@ NextJS 15를 사용하여, 목업데이터를 활용한 블로그 제작 및 메
   <img src="https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=20232a" />
   <img src="https://img.shields.io/badge/tailwindcss-06B6D4.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </div>
+
 ---
 
-- 목업데이터를 활용한 블로그 구현
-- nodemailer를 활용한 메일 전송 기능 구현
-- react-markdown를 활용한 마크다운 뷰어 기능 구현
-- yup을 사용한 메일 전송 유효성 검사 기능
+✔️ 목업데이터를 활용한 블로그 구현
+✔️ nodemailer를 활용한 메일 전송 기능 구현
+✔️ react-markdown를 활용한 마크다운 뷰어 기능 구현
+✔️ yup을 사용한 메일 전송 유효성 검사 기능
