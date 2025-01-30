@@ -1,5 +1,11 @@
 import { getPosts } from '../api/posts';
 import FilteredPost from '@/components/FilteredPost';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All Posts",
+  description: "개발 관련 블로그 글",
+};
 
 export default async function PostsPage() {
   const posts = await getPosts();

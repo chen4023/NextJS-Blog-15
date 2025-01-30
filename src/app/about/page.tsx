@@ -1,6 +1,14 @@
 import Profile from '@/components/Profile';
+import { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description: "Chen 커리어 소개 페이지",
+};
+
 const TITLE_CLASS = "text-2xl font-extrabold pb-3";
+
 export default function AboutPage() {
   return (
     <>

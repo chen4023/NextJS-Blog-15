@@ -13,8 +13,14 @@ const Sejong = localFont({
 
 
 export const metadata: Metadata = {
-  title: "Chen Blog",
+  title: {
+    default: "챈 블로그",
+    template: '챈 블로그 | %s'
+  },
   description: "Next15 버전으로 블로그 개발",
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({
