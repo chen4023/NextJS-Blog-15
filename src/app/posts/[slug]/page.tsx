@@ -1,4 +1,4 @@
-import { getPostDetail } from '@/app/api/posts';
+import { featuredPosts, getPostDetail } from '@/app/api/posts';
 import Image from 'next/image';
 import PostContent from '@/components/PostContent';
 import AdjacentPostCard from '@/components/AdjacentPostCard';
@@ -29,11 +29,16 @@ export default async function PostDetail({ params }: Props) {
         height={420}
       />
       <PostContent post={post} />
-      <div className='flex shadow-md'>
+      <section className='flex shadow-md'>
         {prev && <AdjacentPostCard post={prev} type='prev' />}
         {next && <AdjacentPostCard post={next} type='next' />}
-      </div>
+      </section>
     </article>
   );
 }
 
+export async function generateStaticParams() {
+  const posts = await featuredPosts();
+  return posts ? posts.map((post) => ({ slug: post.path })) : []
+
+}
